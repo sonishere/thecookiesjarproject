@@ -25,7 +25,7 @@ p {
     display: inline-block;
     float: none;
     top: 15px;
-    left: 40%;
+    left: 42%;
     margin: auto;
     padding: 14px 16px;
     color: black;
@@ -41,7 +41,7 @@ p {
   }
 
 .navbar a:active {
-    text-decoration: underline;
+    transform: translateY(1px);
 }
 
 #homepage_jar {
