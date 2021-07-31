@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Scheherazade", sans-serif;
+    background: #ffe9b0;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+  
+  section {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  main:hover {
+    padding-bottom: 100%;
+}
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around; 
+    align-content: center;
+    width: 100%;
+    height: 4rem;
+  }
+  
+  .menu {
+    width: 50%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .link {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 2rem;
+    margin: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 20px;
+    color: black;
+  }
+  
+  .link:hover {
+    color: white;
+    background: #ccb17f;
+    font-weight: lighter;
+  }
+  
+  .shelf {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .mainshelf {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .createjarbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 3rem;
+    border-radius: 20px;
+    background: lightblue;
+    color: black;
+    font-size: 1rem;
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
+  }
+  
+  .newjar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 2rem;
+    background: #52504a;
+    font-family: 'Reem Kufi', sans-serif;
+    
+  } */
+  span {
+    background: #52504a;
+    color: white;
+  }
