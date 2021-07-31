@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Station</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Scheherazade" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet" type="text/css">
+    <script
+      src="https://kit.fontawesome.com/206e8d683f.js"
+      crossorigin="anonymous"
+    ></script>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ol class="topnav">
+                <li><a class="nav-link" href="#">New Cookies</a></li>
+                <li><a class="nav-link" href="#">My Shelf</a></li>
+                <li><a class="nav-link" href="#">Log In</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-content">
+            <img class="cookies-jar" src="C:\Users\Admin\Documents\GitHub\thecookiesjarproject\Resourses\bottlewithoutnap.png" alt="default-jar">
+
+            <!-- welcome page -->
+            <div id="sub-content-opening">
+                <div class="text-content-homepage">
+                    <h1>Welcome to The Cookies Jar!</h1>
+                    <p>The Cookie Jar is a method for you to send inspiring message to your friend, loved ones or even just yourself.
+                    First create a jar and name it. Then, you can start putting in “cookies” - the message you want the receiver to read.</p>
+                </div>
+                <button data-page="sub-content-input"  class="button" onclick="inputPage()">Get Start!</button>                
+            </div>
+            <!-- end of welcome page -->
+
+            <!-- name input -->
+            <div id="sub-content-input">
+                <div class="text-content">
+                    <h1>Name your Jar</h1>
+                    <p>We should have a special name for our jar, aren’t we?</p>
+                </div>
+                <form class="input" action="#">
+                    <input name="name-jar" id="input-name" type="text" placeholder="name of your jar..." required>
+                    <button class="button" data-page="sub-content-create"  onclick="createPage()" >click</button>
+                </form>
+                
+            </div>
+            <!-- end of name input -->
+
+            <!-- create cookies -->
+            <div id="sub-content-create">
+                <div class="text-content">
+                    <h1>Write your message!</h1>
+                    
+                </div>
+                <form class="input" action="#">
+                    <textarea name="cookies-text" id="cookies-text"  cols="30" rows="10" placeholder="write your message here"></textarea>
+                    <label for="file-upload" class="custom-file-upload">
+                        <p>Add Image</p>
+                    </label>
+                    <input id="file-upload" type="file" accept="image/*" onchange="loadFile(event)">
+                        <img id="output"/>
+                        <script>
+                        var loadFile = function(event) {
+                            var output = document.getElementById('output');
+                            output.src = URL.createObjectURL(event.target.files[0]);
+                            output.onload = function() {
+                            URL.revokeObjectURL(output.src) // free memory
+                            }
+                        };
+                        </script>   
+                    <input id="submit-name" class="button" type="button" value="Next">
+                </form>
+                
+            </div>
+            <!-- end of create cookies -->
+        </section>
+    </main>
+    
+    <footer>Copyright by The Cookies Jar @2021</footer>
+    
+</body>
+    <script src="script.js"></script>
+</html>

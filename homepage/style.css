@@ -13,6 +13,8 @@
     background-color: var(--bg-primary);
 }
 
+
+
 .navbar {
     position: relative;
     display: flex;
@@ -82,29 +84,39 @@ main {
 
 }
 
-.sub-content-opening {
+#sub-content-opening, #sub-content-input, #sub-content-create {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
+    text-align: center;
     font-size: 1.5rem;
     flex-grow: 1;
 }
 
-.text-content {
+.text-content-homepage {
+    position: relative;
     width: 65%;
     text-align: center;
 }
 
-.text-content p {
+.text-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.text-content p, .text-content-homepage p {
     margin-top: 1rem;
 }
 
-.text-content h1 {
+.text-content h1, .text-content-homepage h1 {
     font-family: 'Rammetto One', sans-serif;
 }
+
+/* button for all page */
 
 .button {
     margin-top: 2rem;
@@ -112,13 +124,6 @@ main {
     border: none;
     border-radius: 20px;
     padding: 15px 32px;
-}
-
-.button:active {
-    transform: translateY(2px)
-}
-
-.link {
     background-color: #AE804A;
     text-decoration: none;
     color: white;
@@ -128,8 +133,104 @@ main {
     text-align: center;
 }
 
+.button:active {
+    transform: translateY(2px)
+}
+
+/* end of button */
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* input name page */
+#input-name {
+    margin-top: 1rem;
+    color: #3c3c3c;
+    border: none;
+    background-color: #EDC96E;
+    font-family: 'Reem Kufi',sans-serif;
+    padding: 15px 35px;
+    border-radius: 10px;
+}
+
+#input-name::placeholder {
+    text-align: center;
+    color: #3c3c3c;
+    opacity: 1;
+}
+/* end of input name page */
+
+/* create cookies page */
+
+#cookies-text {
+    margin-top: 1rem;
+    color: #3c3c3c;
+    border: none;
+    height: 400px;
+    width: 400px;
+    background-color: #EDC96E;
+    font-family: 'Reem Kufi',sans-serif;
+    padding: 15px 35px;
+    border-radius: 10px;
+}
+
+#cookies-text::placeholder {
+    text-align: left;
+    color: #3c3c3c;
+    opacity: 1;
+}
+
+#cookies-text::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+#cookies-text::-webkit-scrollbar-track {
+    background-color: #EDC96E;
+}
+
+#cookies-text::-webkit-scrollbar-thumb {
+    background-color: #AE804A;
+}
+/* end of create cookies page */
 
 
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    margin-top: 2rem;
+    background-color: #AE804A;
+    border: none;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.custom-file-upload p {
+    background-color: #AE804A;
+    color: whitesmoke;
+    border-radius: 10px;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+
+/* body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #EDC96E;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #AE804A;
+} */
+
+/* footer */
 footer {
     display: flex;
     align-items: center;
