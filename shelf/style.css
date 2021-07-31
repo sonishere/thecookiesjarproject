@@ -22,9 +22,7 @@
     flex-direction: column;
   }
 
-  main:hover {
-    padding-bottom: 100%;
-}
+  
   
   .navbar {
     display: flex;
